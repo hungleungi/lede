@@ -19,7 +19,7 @@ KERNELNAME:=bzImage
 
 include $(INCLUDE_DIR)/target.mk
 
-DEFAULT_PACKAGES += kmod-usb-hid kmod-e1000e kmod-fs-f2fs lm-sensors autocore-x86 luci-app-ipsec-vpnd
+DEFAULT_PACKAGES += kmod-usb-hid kmod-e1000e kmod-fs-f2fs lm-sensors autocore-x86
 $(eval $(call BuildTarget))
 
 $(eval $(call $(if $(CONFIG_ISO_IMAGES),SetupHostCommand,Ignore),mkisofs, \

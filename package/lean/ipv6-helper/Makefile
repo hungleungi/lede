@@ -21,13 +21,13 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/ipv6helper
 	SECTION:=ipv6
-	TITLE:=IPv6 Helper and Dynamic Update he.net of ip
+	TITLE:=IPv6 Helper
 	PKGARCH:=all
-	DEPENDS:=+luci-proto-ipv6 +wget +ip6tables +libip6tc +kmod-ipt-nat6 +odhcpd-ipv6only +odhcp6c +6in4
+	DEPENDS:=+luci-proto-ipv6 +wget +ip6tables +libip6tc +kmod-ipt-nat6 +odhcpd-ipv6only +odhcp6c
 endef
 
 define Package/ipv6helper/description
-	IPv6 Helper and Dynamic Update he.net of ip
+	IPv6 Helper
 endef
 
 define Build/Prepare
