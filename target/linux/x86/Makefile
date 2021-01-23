@@ -19,7 +19,8 @@ KERNELNAME:=bzImage
 
 include $(INCLUDE_DIR)/target.mk
 
-DEFAULT_PACKAGES += kmod-usb-hid kmod-e1000e kmod-fs-f2fs lm-sensors autocore-x86
+DEFAULT_PACKAGES += partx-utils mkf2fs fdisk e2fsprogs wpad kmod-usb-hid kmod-e1000e kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba \
+luci-app-jd-dailybonus luci-app-sfe luci-app-flowoffload luci-app-uugamebooster
 $(eval $(call BuildTarget))
 
 $(eval $(call $(if $(CONFIG_ISO_IMAGES),SetupHostCommand,Ignore),mkisofs, \
