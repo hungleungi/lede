@@ -14,9 +14,9 @@ DEVICE_TYPE?=router
 
 # Default packages - the really basic set
 DEFAULT_PACKAGES:=base-files libc libgcc busybox dropbear uci opkg netifd fstools uclient-fetch logd urandom-seed urngd \
-wget ipv6helper default-settings luci-ssl-nginx luci-app-ddns luci-app-upnp luci-app-udpxy luci-app-acme acme-dnsapi wget curl bind-dig \
-luci-app-ssr-plus luci-app-vlmcsd luci-app-sfe luci-app-cpufreq luci-app-adguardhome luci-app-smartdns luci-app-qbittorrent luci-app-aria2 \
-luci-app-autoreboot luci-app-cifs-mount luci-app-e2guardian luci-app-filetransfer luci-app-kodexplorer luci-app-minidlna luci-app-nfs luci-app-wireguard
+wget ipv6helper default-settings luci-ssl-nginx luci-app-ddns luci-app-upnp luci-app-udpxy acme acme-dnsapi wget curl bind-dig \
+luci-app-ssr-plus luci-app-vlmcsd luci-app-sfe luci-app-cpufreq luci-app-adguardhome luci-app-qbittorrent luci-app-aria2 \
+luci-app-cifs-mount luci-app-minidlna luci-app-wireguard
 # For the basic set
 DEFAULT_PACKAGES.basic:=
 # For nas targets
