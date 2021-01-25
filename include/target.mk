@@ -13,7 +13,7 @@ __target_inc=1
 DEVICE_TYPE?=router
 
 # Default packages - the really basic set
-DEFAULT_PACKAGES:=base-files libc libgcc busybox dropbear uci opkg netifd fstools logd urandom-seed urngd default-settings luci-ssl-openssl \
+DEFAULT_PACKAGES:=base-files libc libgcc busybox dropbear uci opkg netifd fstools logd urandom-seed urngd default-settings \
 luci-app-upnp luci-app-ssr-plus luci-app-vlmcsd luci-app-sfe luci-app-udpxy luci-app-wireguard kmod-fs-f2fs autocore-x86
 
 # For the basic set
